@@ -400,9 +400,10 @@ div.social-media-icon a{
 
 /* SEND-MESSAGE */
 div.send-message {
+    background-color: transparent !important;
     width: 75%;
     height: 178.85px;
-    border-bottom: 1px solid #55626f;
+    border-bottom: 1px solid #55626f !important;
     margin: 0 auto;
 }
 div.send-message form {
