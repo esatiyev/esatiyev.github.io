@@ -1,0 +1,108 @@
+@media(max-width: 800px) { 
+    html, body {
+        width: 100vw;
+        
+    }
+    div.send-message form div {
+       display: block;
+       width: 100%;
+       
+    }
+    div.send-message {
+          display: block;
+          margin:  auto;
+        
+          font-size: xx-large;
+          width: 150vw;
+          height: 60vh;
+    }
+
+
+ 
+    
+    div#contact {
+        height:  120vh;
+        background-size: cover;
+        
+    }
+    div.contact {
+        font-size: 2rem;
+        width: 130%;
+        margin: 0;
+        margin-bottom: 100px;
+        padding: 0px 0px;
+    }
+    div.about-contact {
+        margin: 0px;
+    }
+    body {
+     
+    box-sizing: border-box; 
+    
+    }
+  
+
+
+
+
+    div#work h4 {
+        font-size: 80px;
+    }
+    div#work h3 {
+        font-size: 100px !important;
+    }
+    div#work{
+        height: 180vh;
+        width: 360vw;
+        font-size: 50px;
+        font-weight: bold;
+        margin: auto;
+    }
+    div#work p {
+        font-size: 50px;
+    }
+    div#work h3 {
+        font-size: 80px;
+    }
+    
+
+    ul li {
+        display: block ;  
+        margin-right: 0px;
+    }
+    ul li:first-child a {
+        padding-left: initial;
+    }
+    ul {
+        text-align: right;
+        position: absolute;
+        left: 290vw;
+        width: max-content;
+    }
+    ul {
+        display: none;
+    }
+    
+
+    div#menu img,div#menu input{
+        display: initial;
+        overflow: hidden;
+        position: relative;
+        top: 3vw;
+        right: 10vw;
+        /* overflow: hidden; */
+    }
+  
+    div#menu input:checked + label + ul {
+        display: block;
+    }
+
+    div.contact h3 {
+        font-size: 100px;
+        padding-bottom: 130px;
+    }
+    div.social-media-icon {
+        padding-top: 100px;
+        text-align: center;
+    }
+}
