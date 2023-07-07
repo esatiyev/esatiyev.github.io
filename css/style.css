@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+::selection {
+    background: #ef664d;
+    color: black;
+}
+div.about-text2 {
+    display: none;
+}
+html,body {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+/* HEADER */
+div.header {
+    background-image: url("../pictures/header-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: cover;
+    height: 77vh;
+    min-height: 400px;
+}
+div.logo  {
+    width: 19%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+div.logo img {
+    width: 100%;
+}
+div#menu {
+    position: absolute;
+    right: 5%;
+    top: 13%;
+}
+div#menu ul {
+    padding: 0;
+    width: max-content;
+}
+ul li {
+    display: inline-block;
+}
+ul li:nth-last-child(n+2) {
+    padding-right: 30px;
+}
+ul li a{
+    color: #f5f5dc;
+    text-decoration: none;
+    font-size: 15.4px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+ul li:nth-child(1) a {
+    color: #ef664d;
+    font-weight: 700;
+}
+ul li:nth-child(n+2) a:hover {
+    color: #ef664d;
+    font-weight: 700;
+    animation-name: menu-animation;
+    animation-duration: 400ms;
+}
+@keyframes menu-animation {
+    from {
+        color: beige;
+    }
+    to {
+        color: #ef664d;
+    }
+}
+ul li a:focus {
+	outline: none;
+}
+div.Iam {
+    position: relative;
+    top: 45%;
+}
+div.Iam h1 {
+    padding-top: 15px;
+}
+div.Iam h1, div.Iam h2 {
+    font-size: 33.6px;
+    font-weight: 400;
+    font-family: 'Arvo', serif;
+    width: max-content;
+    color: #eee;
+    margin: 0 auto;
+}
+div.Iam h2::after {
+    content: '';
+    color: #ef664d;
+    animation-name: job-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes job-animation {
+    0% {
+        content: ' WEB DEVELOPER!';
+    }
+    33% {
+        content: ' WEB DEVELOPER!';
+    }
+    66% {
+        content: ' .NET DEVELOPER!';
+    }
+    100% {
+        content: ' GAME DEVELOPER!';
+    }
+}
+
+/* ABOUT */
+div.about-first {
+    width: 100%;
+    height:  90%;
+}
+div.about-header {
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+}
+div.about-header h3.about {
+    width: max-content;
+    margin: 0 auto; 
+    font-size: 31px;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    color: #2a404e;
+    margin-top: 35px;
+}
+div.pp {
+    display: inline-block;
+    width: 184px;
+    height: 246px;
+    position: relative;
+    left: 13.5%;
+    top: 4%;
+}
+img.pp {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ef664d;
+    border-radius: 103px;
+}
+div.about-text {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+    left: 23%;
+    top: 4px;
+}
+div.about-text p {
+    width: 100%;  
+    font-size: 15px;
+    color: #7e7e7e;
+    margin: 0 auto;
+    line-height: 22px;
+    text-align: center;
+}
+
+/* SKILL */
+div.all-skills {
+    width: 100%;
+    height: 350px;
+}
+div.left-side-5-skills, div.right-side-5-skills {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+div.f-col, div.s-col {
+    width: 100%;
+    height: 20%;
+    padding: 10px 0;
+}
+div.about-skill {
+    margin: 0 auto;
+    width: 80%;
+    height: 24px;
+    font-size: 17px;
+}
+div.name-of-skill, div.percentage-written {
+    display: inline-block;
+    color: #2a404e;
+    font-weight: bold;
+}
+div.skills {
+    margin: 0 auto;
+    width: 80%;
+    height: 14px;
+    background-color: #dedede;;
+}
+div.percentage-graph {
+    height: 100%;
+    background-color: #ef664d;
+}
+div.percentage-written {
+    float: right;
+}
+#PHP {
+    width: 95%;
+}
+#MYSQL {
+    width: 92%;
+}
+#C-CPP {
+    width: 85%;
+}
+#HTML-CSS {
+    width: 75%;
+}
+#PYTHON {
+    width: 54%;
+}
+#JS-JQUERY {
+    width: 94%;
+}
+#NODEJS {
+    width: 60%;
+}
+#JAVA-JSP {
+    width: 60%;
+}
+#CSharp {
+    width: 96%;
+}
+#ASPNET {
+    width: 89%;
+}
+
+/* GO_TO */
+#go_to {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+#go_to a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* GALLERY SECTION */
+div#gallery {
+    width: 100%;
+    padding-top: 42px;
+    margin-top: 35px;
+    background-color: #061627;
+}
+div#gallery h3.gallery-header {
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    color: #ef664d;
+    margin-bottom: 56px;
+}
+
+div.pictures {
+    height: 338px;
+    width: 70vw;
+    margin: 0 auto;
+}
+div.picture img {
+    width: 100%;
+    height: 150px;
+}
+.responsive {
+    padding: 0 6px;
+    margin-bottom: 30px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 49%;
+  }
+  .responsive:nth-child(n+3){
+    margin-top: 20px;
+  }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.picture img:hover {
+    transform: scale(1.3);  
+    transition: 0.7s; 
+}
+
+
+
+
+/* WORK SECTION*/
+div#work {
+    width: 100%;
+    padding: 42px 0;
+    text-align: center;
+}
+div.about-work {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+div#work h3 {
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    color: #2a404e;
+    margin: 0;
+}
+div.about-work p {
+    line-height: 1.5em;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+div.about-work a {
+    text-decoration: none;
+    color: #1B242F;
+}
+div.about-work a:hover {
+    color: #ef664d ;
+    animation-name: link-animation;
+    animation-duration: 0.8s;
+}
+@keyframes link-animation {
+    from {
+        color: #1B242F;
+    }
+    to {
+        color: #ef664d ;
+    }
+}
+div.about-work h4 {
+    margin: 0;
+}
+div#work p.bela {
+    margin-top: 0;
+}
+
+/* CONTACT SECTION */
+div#contact {
+    width: 100%;
+    height: 583.725px;
+    padding: 40px 0px;
+    background-color: #061627;
+}
+div.contact {
+    width: 64%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+}
+div.contact h3 {
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    color: #ef664d;
+    margin: 0;
+}
+div.contact p {
+    color: #fefefe;
+    line-height: 1.5em;
+    padding: 25px 0px;
+    margin: 0;
+}
+div.social-media-icon {
+    width: max-content;
+    padding: 30px 0; 
+    margin: 0 auto;  
+}
+div.social-media-icon a:nth-last-child(n + 2){
+    margin-right: 20px;
+}
+div.social-media-icon a:hover {
+    color: #ef664d;
+    cursor: pointer;
+}
+div.social-media-icon a{
+    color: beige;
+    text-decoration: none;
+}
+
+/* SEND-MESSAGE */
+div.send-message {
+    width: 75%;
+    height: 178.85px;
+    border-bottom: 1px solid #55626f;
+    margin: 0 auto;
+}
+div.send-message form {
+    width: 100%;
+}
+div.send-message div:nth-last-child(n+3) input { 
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d5d6d7;
+    font-size: 15px;
+    background: none;
+    color: #d5d6d7;
+    padding: 10px 0;
+}
+div.send-message form div:nth-last-child(n+3) {
+    display: inline-block;
+    padding: 0px 15px 28px;
+    width: 32.83%;
+}
+
+div.send-message div.message {
+    width: 66%;
+    padding: 0 0 0 15px;
+    display: inline-block;
+}
+div.message textarea {
+    overflow-y: scroll;
+    width: 100%;
+    color: #d5d6d7;
+    background: none;
+    outline: none; 
+    resize: none;
+    border: none;
+    border-bottom: 1px solid#d5d6d7;
+    font-size: 15px;
+}
+div.submit input {
+    width: 100%;
+    font-size: 15px;
+    color: #ef664d;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+div.submit {
+    display: inline-block;
+    position: absolute;
+    right: 13.5%;
+    margin-top: 23px; 
+}
+
+/* FOOTER */
+div.footer {
+    width: max-content;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+div.footer p {
+    font-size: 17px;
+    color: #d5d6d7;
+    font-weight: 400;
+}
+
+a#toTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+a#toTop img {
+    width: 48px;
+    height: 48px;
+}
